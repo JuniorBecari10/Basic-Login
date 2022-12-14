@@ -14,15 +14,15 @@ def style():
 
 # ---
 
-@app.route("/")
-def index():
-  if not session["login"]:
-    return render_template("/login.html")
+#@app.route("/")
+#def index():
+  #if not session["login"]:
+  #  return render_template("/login.html")
 
 @app.route("/login", methods=["GET", "POST"])
 def login():
   if request.method == "POST":
-    
+    pass
   
   return render_template("/login.html")
 
