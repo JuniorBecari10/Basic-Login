@@ -1,0 +1,116 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  background: linear-gradient(28deg, rgba(14, 58, 177, 1) 30%, rgba(0, 212, 255, 1) 100%);
+}
+
+a {
+  color: blue;
+  text-decoration: none;
+  
+  border-radius: 5px;
+  
+  transition: background 0.3s, color 0.3s, padding 0.3s;
+}
+
+a:hover {
+  background: black;
+  color: white;
+  
+  padding: 5px;
+}
+
+.form-login {
+  margin-left: 50%;
+  margin-top: 50vh;
+  
+  transform: translate(-50%, -50%);
+  
+  width: 40%;
+  height: 50vh;
+  
+  text-align: center;
+  
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.34);
+}
+
+.form-login h1 {
+  padding: 10px;
+  padding-top: 30px;
+}
+
+.form-login form {
+  margin-top: 60px;
+}
+
+.form-login input:not([type="submit"]) {
+  width: 80%;
+  margin-bottom: 30px;
+  
+  padding-bottom: 5px;
+  
+  font-size: 14pt;
+  
+  border: none;
+  outline: none;
+  
+  border-bottom: 1px solid black;
+}
+
+.form-login input[type="submit"] {
+  display: block;
+  
+  width: 40%;
+  height: 30px;
+  
+  font-size: 14pt;
+  
+  margin-top: 30px;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  
+  background: white;
+  
+  border: 1px solid black;
+  outline: none;
+  
+  border-radius: 5px;
+  
+  transition: background 0.3s, color 0.3s;
+}
+
+.form-login input[type="submit"]:hover {
+  background: black;
+  color: white;
+}
+
+.form-login p {
+  margin-top: 25px;
+}
+
+.apologize {
+  position: absolute;
+  
+  background: #ff6961;
+  color: #72231e;
+  
+  border-radius: 10px;
+  box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.34);
+  
+  left: 50%;
+  top: 15vh;
+  
+  width: 40%;
+  padding: 10px;
+  
+  text-align: center;
+  
+  transform: translateX(-50%);
+}
