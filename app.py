@@ -23,7 +23,7 @@ def style():
 
 @app.route("/")
 def index():
-  if not session.get("login") or session.get("pass"):
+  if not session.get("login") or not session.get("pass"):
     return redirect("/login")
   
   return render_template("/index.html", title=program_name)
